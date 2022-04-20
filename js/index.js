@@ -38,10 +38,9 @@ function calculateAll() {
 
 function removeProduct(event) {
   const target = event.currentTarget;
-  event.target.parentNode.parentNode.remove();
+  target.parentNode.parentNode.remove();
+  calculateAll().remove();
   console.log('The target in remove is:', target);
-
-  
 }
 
 // ITERATION 5
